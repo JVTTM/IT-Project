@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create an account to explore universities, colleges, courses and bursaries.">
+    <title>Sign Up | Centralized Accredited University and College Platform</title>
+    <link rel="stylesheet" href="Login-style.css">
+    <script src="signup.js" defer></script>
+</head>
+<body>
+    <main class="login-card">
+        <a href="index.html" class="brand">Centralized Accredited University and College Platform</a>
+        <h2>Create Account</h2>
+        <h3>Join us to explore educational opportunities</h3>
+
+        <form class="login-form" id="signupForm" novalidate>
+            <input type="text" id="username" name="username" placeholder="Username"
+                   aria-label="Username" minlength="3" maxlength="50" pattern="[a-zA-Z0-9_]+"
+                   autocomplete="username" required>
+            <input type="email" id="email" name="email" placeholder="Email address"
+                   aria-label="Email address" maxlength="254" autocomplete="email" required>
+            <input type="password" id="password" name="password" placeholder="Password"
+                   aria-label="Password" minlength="8" autocomplete="new-password"
+                   aria-describedby="passwordHelp" required>
+            <small id="passwordHelp">At least 8 characters, with uppercase, lowercase and a number.</small>
+
+            <button type="submit">Create Account</button>
+            <p id="message" role="status" aria-live="polite"></p>
+        </form>
+
+        <p class="alt-links">
+            Already have an account? <a href="Login%20Page.html">Log in</a>
+            &middot; <a href="index.html">Back to home</a>
+        </p>
+    </main>
+</body>
+</html>

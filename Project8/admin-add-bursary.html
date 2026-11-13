@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>document.documentElement.classList.add("auth-pending");</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Bursary | Admin | Centralized Accredited University and College Platform.</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+    <script src="admin-pages.js" defer></script>
+    <link rel="stylesheet" href="site.css">
+    <script src="site.js" defer></script>
+</head>
+
+<body data-auth="admin" data-page="add-bursary">
+
+<div class="admin-layout">
+
+    <aside class="sidebar" id="sidebar">
+
+        <a href="admin.html" class="admin-logo">
+            C.A.U.C.P <strong>SA</strong>
+        </a>
+
+        <div class="sidebar-label">MAIN MENU</div>
+
+        <nav class="sidebar-nav">
+
+            <a href="admin.html" class="nav-item">
+                <span>▦</span> Dashboard
+            </a>
+
+            <a href="admin-institutions.html" class="nav-item">
+                Institutions
+            </a>
+
+            <a href="admin-courses.html" class="nav-item">
+                Courses
+            </a>
+            <a href="admin-bursaries.html" class="nav-item active">
+                 Bursaries
+            </a>
+
+            <a href="admin-verification.html" class="nav-item">
+                Verification
+                <span class="nav-count"><span data-stat="pending">0</span></span>
+            </a>
+
+            <a href="admin-students.html" class="nav-item">
+                Students
+            </a>
+
+        </nav>
+
+        <div class="sidebar-label">MANAGEMENT</div>
+
+        <nav class="sidebar-nav">
+
+            <a href="admin-reports.html" class="nav-item">
+                Reports
+            </a>
+
+            <a href="admin-settings.html" class="nav-item">
+                Settings
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="admin-profile">
+
+                <div class="avatar">AD</div>
+
+                <div>
+                    <strong><span data-admin-name></span></strong>
+                    <small>Administrator</small>
+                </div>
+
+            </div>
+
+            <a href="#" class="logout-link" data-logout="admin">
+                Sign Out
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <button class="sidebar-toggle"
+                    id="sidebarToggle"
+                    aria-label="Toggle sidebar"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <div class="breadcrumb">
+                Admin Panel / <strong>Add Bursary</strong>
+            </div>
+
+            <div class="topbar-actions">
+                <div class="topbar-user">
+                    <div class="avatar">AD</div>
+                    <span><span data-admin-name></span></span>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <div class="dashboard-content">
+            <div class="welcome-section"><div><span class="eyebrow">ADMIN</span><h1>Add Bursary</h1><p>Students see new bursaries immediately.</p></div></div>
+            <div class="dashboard-card">
+<form id="adminForm" data-action="add_bursary" novalidate><div class="form-grid"><div class="form-field"><label for="name">Bursary name</label><input type="text" id="name" name="name" required maxlength="200"></div><div class="form-field"><label for="provider">Provider</label><input type="text" id="provider" name="provider" required maxlength="200"></div><div class="form-field"><label for="field_of_study">Field of study</label><input type="text" id="field_of_study" name="field_of_study" maxlength="100" placeholder="e.g. Engineering"></div><div class="form-field"><label for="amount">Amount</label><input type="text" id="amount" name="amount" maxlength="100" placeholder="e.g. Full tuition"></div><div class="form-field"><label for="deadline">Closing date</label><input type="date" id="deadline" name="deadline" ></div><div class="form-field"><label for="application_url">Application link</label><input type="url" id="application_url" name="application_url" placeholder="https://" maxlength="500"></div><div class="form-field full"><label for="eligibility">Eligibility requirements</label><textarea id="eligibility" name="eligibility"></textarea></div><div class="form-field full"><label for="description">Description</label><textarea id="description" name="description"></textarea></div></div><div class="form-actions"><button type="submit">Add Bursary</button><span class="form-msg" role="status" aria-live="polite"></span></div></form>
+            </div>
+
+            <footer class="admin-footer">
+                © <span data-year></span> Centralized Accredited University and College Platform. Administrator Dashboard.
+            </footer>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+.auth-pending body { visibility: hidden; }
+[hidden] { display: none !important; }
+#navlist a[data-logout] { margin-left: auto; background: rgb(255 255 255 / 14%); }
+#navlist a[data-logout]:hover { background: rgb(255 255 255 / 26%); }

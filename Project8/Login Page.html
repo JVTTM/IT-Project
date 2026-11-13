@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Log in to your Courses Directory account.">
+
+    <title>Login | Courses Directory</title>
+
+    <link rel="stylesheet" href="./Login-style.css">
+    <script src="./Login%20Page.js" defer></script>
+</head>
+<body>
+    <main class="login-card">
+        <a href="index.html" class="brand">Centralized Accredited University and College Platform</a>
+        <h2>Login</h2>
+        <h3>Enter your credentials</h3>
+
+        <form id="loginForm" class="login-form"
+              action="./login.php" method="post">
+
+            <label for="username" class="sr-only">Username or email</label>
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Username or email"
+                autocomplete="username"
+                maxlength="254"
+                required
+            >
+
+            <label for="password" class="sr-only">Password</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                autocomplete="current-password"
+                required
+            >
+            <a href="./forgot-password.html">Forgot your password?</a>
+            <button type="submit" id="loginButton">Login</button>
+
+            <p>
+                Don't have an account?
+                <a href="./signup.html">Sign up</a>
+            </p>
+
+            <p id="loginMessage" role="status"
+               aria-live="polite" hidden></p>
+        </form>
+        <p class="alt-links"><a href="./index.html">&larr; Back to home</a> &middot; <a href="./admin-login.html">Admin sign in</a></p>
+    </main>
+</body>
+</html>

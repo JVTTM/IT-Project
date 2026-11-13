@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>document.documentElement.classList.add("auth-pending");</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bursaries | EduConnect SA</title>
+    <link rel="stylesheet" href="Institution.css">
+    <link rel="stylesheet" href="platform.css">
+    <link rel="stylesheet" href="site.css">
+    <script src="site.js" defer></script>
+    <script src="bursaries.js" defer></script>
+</head>
+<body data-auth="student">
+    <nav id="navlist" aria-label="Main navigation"></nav>
+
+    <header class="hero">
+        <h1>Find Bursaries</h1>
+        <p>Check eligibility, deadlines and how to apply.</p>
+
+        <form id="searchForm" role="search">
+            <div class="autocomplete">
+                <input type="search" id="searchBar" name="q" maxlength="100"
+                       placeholder="Search by bursary, provider or requirement..."
+                       aria-label="Search bursaries">
+            </div>
+            <button type="submit">Search</button>
+        </form>
+        <div class="filter-row">
+            <select id="fieldFilter" aria-label="Filter by field of study">
+                <option value="">All fields of study</option>
+            </select>
+        </div>
+    </header>
+
+    <main class="page-wrap">
+        <h2>Available Bursaries</h2>
+        <div id="bursaryList" class="bursary-list" aria-live="polite"></div>
+    </main>
+</body>
+</html>

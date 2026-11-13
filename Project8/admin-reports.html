@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>document.documentElement.classList.add("auth-pending");</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reports | Admin | Centralized Accredited University and College Platform.</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+    <script src="admin-pages.js" defer></script>
+    <link rel="stylesheet" href="site.css">
+    <script src="site.js" defer></script>
+</head>
+
+<body data-auth="admin" data-page="reports">
+
+<div class="admin-layout">
+
+
+    <aside class="sidebar" id="sidebar">
+
+        <a href="admin.html" class="admin-logo">
+            C.A.U.C.P
+        </a>
+
+        <div class="sidebar-label">MAIN MENU</div>
+
+        <nav class="sidebar-nav">
+
+            <a href="admin.html" class="nav-item">
+                Dashboard
+            </a>
+
+            <a href="admin-institutions.html" class="nav-item">
+                Institutions
+            </a>
+
+            <a href="admin-courses.html" class="nav-item">
+                Courses
+            </a>
+            <a href="admin-bursaries.html" class="nav-item">
+                Bursaries
+            </a>
+
+            <a href="admin-verification.html" class="nav-item">
+                Verification
+                <span class="nav-count"><span data-stat="pending">0</span></span>
+            </a>
+
+            <a href="admin-students.html" class="nav-item">
+                Students
+            </a>
+
+        </nav>
+
+        <div class="sidebar-label">MANAGEMENT</div>
+
+        <nav class="sidebar-nav">
+
+            <a href="admin-reports.html" class="nav-item active">
+                Reports
+            </a>
+
+            <a href="admin-settings.html" class="nav-item">
+                Settings
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="admin-profile">
+
+                <div class="avatar">AD</div>
+
+                <div>
+                    <strong><span data-admin-name></span></strong>
+                    <small>Administrator</small>
+                </div>
+
+            </div>
+
+            <a href="#" class="logout-link" data-logout="admin">
+                Sign Out
+            </a>
+
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <button class="sidebar-toggle"
+                    id="sidebarToggle"
+                    aria-label="Toggle sidebar"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <div class="breadcrumb">
+                Admin Panel / <strong>Reports</strong>
+            </div>
+
+            <div class="topbar-actions">
+
+                <div class="topbar-user">
+                    <div class="avatar">AD</div>
+                    <span><span data-admin-name></span></span>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <div class="dashboard-content">
+            <div class="welcome-section"><div><span class="eyebrow">ADMIN</span><h1>Reports</h1><p>A snapshot of the platform.</p></div></div>
+            <div class="dashboard-card">
+<div class="report-grid" id="reportGrid"></div><p id="empty" class="empty-row" hidden>Unable to load reports.</p>
+            </div>
+
+            <footer class="admin-footer">
+                © <span data-year></span> Centralized Accredited University and College Platform. Administrator Dashboard.
+            </footer>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

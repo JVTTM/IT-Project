@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the Courses Directory team for assistance with courses and institutions.">
+    <title>Contact Us | Courses Directory</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js" defer></script>
+    <link rel="stylesheet" href="site.css">
+    <script src="site.js" defer></script>
+</head>
+<body>
+
+    <nav id="navlist" aria-label="Main navigation"></nav>
+
+    <header class="hero">
+        <h1>Contact Us</h1>
+        <p>
+            Have a question or need assistance?
+            Send us a message and let us know how we can help.
+        </p>
+    </header>
+
+    <main class="contact-container">
+
+        <section class="contact-info" aria-labelledby="contactHeading">
+            <h2 id="contactHeading">Get in Touch</h2>
+
+            <p>
+                We welcome questions, feedback, and suggestions
+                about our courses and institution directory.
+            </p>
+
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>
+                    <a href="mailto:thatomanaka59@gmail.com">
+                        info@coursesdirectory.gmail.com
+                    </a>
+                </p>
+            </div>
+
+            <div class="contact-item">
+                <h3>What can we help with?</h3>
+                <ul>
+                    <li>Course information</li>
+                    <li>University and college listings</li>
+                    <li>Website feedback</li>
+                    <li>General enquiries</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-form-section" aria-labelledby="formHeading">
+            <h2 id="formHeading">Send Us a Message</h2>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                        maxlength="100"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        autocomplete="email"
+                        required
+                        maxlength="254"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="courses">Course Enquiry</option>
+                        <option value="institutions">Institution Enquiry</option>
+                        <option value="feedback">Website Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message here..."
+                        required
+                        maxlength="3000"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="button">
+                    Send Message
+                </button>
+
+                <p id="formStatus" role="status" aria-live="polite" hidden></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Centralized Accredited University and College Application Platform. Explore educational opportunities.</p>
+    </footer>
+
+</body>
+</html>

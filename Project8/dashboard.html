@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>document.documentElement.classList.add("auth-pending");</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Centralized Accredited University and College Platform</title>
+
+    <link rel="stylesheet" href="Home Page.css">
+    <script src="Home Page.js" defer></script>
+    <link rel="stylesheet" href="site.css">
+    <script src="site.js" defer></script>
+</head>
+
+<body data-auth="student">
+
+    <nav id="navlist" aria-label="Main navigation"></nav>
+
+    <header class="hero">
+        <h1>Welcome back, <span data-username></span></h1>
+
+        <p>
+            Search institutions and discover courses to help you
+            find the right educational opportunities.
+        </p>
+
+        <form id="searchForm" role="search">
+            <div class="autocomplete">
+
+                <input
+                    type="search"
+                    id="searchBar"
+                    name="searchBar"
+                    placeholder="Search courses, universities, colleges..."
+                    autocomplete="off"
+                    aria-label="Search courses and institutions"
+                    aria-autocomplete="list"
+                    aria-controls="suggestions"
+                    aria-expanded="false"
+                >
+
+                <div
+                    id="suggestions"
+                    class="suggestions"
+                    role="listbox"
+                ></div>
+
+            </div>
+
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <main>
+
+        <section class="home-section">
+            <h2 class="section-heading">
+                Explore Your Educational Opportunities
+            </h2>
+
+            <p class="section-description">
+                Browse institutions and courses to find programmes
+                that match your interests and career goals.
+            </p>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <h3>Explore Institutions</h3>
+
+                    <p>
+                        Discover universities and colleges,
+                        learn about their offerings, and visit
+                        their official websites.
+                    </p>
+
+                    <a href="institutions.html" class="feature-link">
+                        Browse Institutions
+                    </a>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Discover Courses</h3>
+
+                    <p>
+                        Explore courses by subject, qualification,
+                        or tag to find programmes that interest you.
+                    </p>
+
+                    <a href="courses.html" class="feature-link">
+                        Browse Courses
+                    </a>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Find Bursaries</h3>
+                    <p>
+                        See bursaries you can apply for, their
+                        eligibility requirements and deadlines.
+                    </p>
+                    <a href="bursaries.html" class="feature-link">
+                        Browse Bursaries
+                    </a>
+                </article>
+
+                <article class="feature-card">
+                    <h3>APS Calculator</h3>
+                    <p>
+                        Enter your marks, work out your APS and see
+                        which courses you qualify for.
+                    </p>
+                    <a href="aps.html" class="feature-link">
+                        Calculate My APS
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; Centralized Accredited University and College Platform. Explore educational opportunities.
+        </p>
+    </footer>
+
+</body>
+</html>

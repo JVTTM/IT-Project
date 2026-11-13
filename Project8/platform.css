@@ -1,0 +1,45 @@
+.page-wrap { max-width: 1100px; margin: 0 auto; padding: 32px 20px 56px; }
+.page-wrap h2 { color: var(--blue-text); margin: 0 0 18px; }
+.filter-row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 4px; }
+.filter-row select { min-height: 48px; padding: 0 14px; border: 2px solid var(--border); border-radius: 24px; font: inherit; background: #fff; }
+.bursary-list { display: grid; gap: 18px; }
+.bursary { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 22px; box-shadow: 0 4px 14px rgb(16 68 154 / 6%); }
+.bursary h3 { margin: 0 0 4px; color: #10449a; }
+.bursary .provider { margin: 0 0 12px; color: var(--muted); font-size: .92rem; }
+.bursary dl { margin: 14px 0; display: grid; gap: 10px; }
+.bursary dt { font-weight: 700; font-size: .8rem; letter-spacing: .5px; text-transform: uppercase; color: var(--blue-text); }
+.bursary dd { margin: 2px 0 0; }
+.pill { display: inline-block; padding: 4px 12px; border-radius: 20px; background: #eaf1ff; color: #10449a; font-size: .8rem; font-weight: 700; margin-right: 6px; }
+.pill.closed { background: #eceff3; color: #555; }
+.pill.ok { background: #e6f4ec; color: #067647; }
+.pill.warn { background: #fdf0e1; color: #b54708; }
+.back-link { display: inline-block; margin-bottom: 18px; color: var(--blue-text); text-decoration: none; font-weight: 600; }
+.back-link:hover { text-decoration: underline; }
+.detail-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+.detail-card img { display: block; width: 100%; max-height: 320px; object-fit: cover; }
+.detail-body { padding: 26px; }
+.detail-body h1 { margin: 0 0 10px; color: #10449a; }
+.detail-section { margin-top: 26px; }
+.detail-section h3 { margin: 0 0 8px; color: var(--blue-text); }
+.course-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.course-list li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 10px 14px; background: #f7f9fc; border: 1px solid var(--border); border-radius: 8px; }
+.empty-note { padding: 28px; text-align: center; background: #fff; border: 1px dashed var(--border); border-radius: 12px; color: var(--muted); }
+
+.aps-layout { display: grid; grid-template-columns: minmax(280px, 380px) 1fr; gap: 24px; align-items: start; }
+@media (max-width: 860px) { .aps-layout { grid-template-columns: 1fr; } }
+.panel { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 22px; }
+.panel h2 { margin-top: 0; }
+.marks-grid { display: grid; gap: 10px; }
+.mark-row { display: grid; grid-template-columns: 1fr 84px 36px; gap: 10px; align-items: center; }
+.mark-row label { font-size: .92rem; }
+.mark-row input { width: 100%; padding: 9px; border: 1px solid var(--border); border-radius: 8px; font: inherit; }
+.mark-row input[aria-invalid="true"] { border-color: #b42318; }
+.mark-pts { text-align: center; font-weight: 700; color: #10449a; }
+.check-row { display: flex; align-items: center; gap: 8px; margin: 14px 0 0; font-size: .92rem; }
+.aps-total { margin: 18px 0 8px; padding: 16px; border-radius: 12px; background: #eaf4ff; text-align: center; }
+.aps-total strong { display: block; font-size: 2.6rem; line-height: 1.1; color: #10449a; }
+.small-print { margin: 10px 0 0; font-size: .82rem; color: var(--muted); }
+.results-controls { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+.results-controls input, .results-controls select { flex: 1 1 170px; min-height: 44px; padding: 0 12px; border: 1px solid var(--border); border-radius: 8px; font: inherit; background: #fff; }
+.career-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.career-list li { padding: 14px; border: 1px solid var(--border); border-radius: 10px; background: #f7f9fc; font-weight: 600; color: #10449a; }

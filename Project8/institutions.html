@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>document.documentElement.classList.add("auth-pending");</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover universities, colleges, and educational institutions.">
+
+    <title>Institutions | Centralized Accredited University and College Platform</title>
+
+    <link rel="stylesheet" href="./Institution.css">
+    <script src="./Institution.js" defer></script>
+    <link rel="stylesheet" href="site.css">
+    <script src="site.js" defer></script>
+</head>
+<body data-auth="student">
+
+    <nav id="navlist" aria-label="Main navigation"></nav>
+
+    <header class="hero">
+        <h1>Find Universities and Colleges</h1>
+        <p>Explore educational institutions and discover opportunities.</p>
+
+        <form id="searchForm" role="search">
+            <div class="autocomplete">
+                <input
+                    type="search"
+                    id="searchBar"
+                    name="q"
+                    placeholder="Search by institution, location, or tag..."
+                    autocomplete="off"
+                    aria-label="Search institutions"
+                    aria-controls="suggestions"
+                    aria-expanded="false"
+                >
+
+                <div
+                    id="suggestions"
+                    class="suggestions"
+                    role="listbox"
+                ></div>
+            </div>
+
+            <button type="submit">Search</button>
+            <button type="button" id="clearSearch">Show All</button>
+        </form>
+    </header>
+
+    <main class="results">
+        <h2>Universities and Colleges</h2>
+
+        <div
+            id="institutionsContainer"
+            class="cards-container"
+            aria-live="polite"
+            aria-busy="true"
+        ></div>
+
+        <p id="noInstitutions" hidden>
+            No matching institutions found.
+        </p>
+
+        <p id="searchError" role="alert" hidden></p>
+    </main>
+
+    <footer>
+        <p>&copy; Centralized Accredited University and College Platform. Explore educational opportunities.
+
+        </p>
+    </footer>
+
+</body>
+</html>
